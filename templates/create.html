@@ -1,0 +1,14 @@
+{% extends "/layouts/main.html" %}
+
+{% block body %}
+
+<form method="POST" action="/save">
+    <div class="mb-3">
+        <label for="valueInput" class="form-label">Enter a value</label>
+        <input type="number" class="form-control" id="valueInput" name="valueInput">
+        <div id="emailHelp" class="form-text">Value must be 1 or 0</div>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+{% endblock %}
